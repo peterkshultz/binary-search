@@ -4,6 +4,7 @@
 
 #include <vector>
 #include <math.h>
+
 bool binarySearch(const std::vector<int> &a_sorted_vector, int desired_search) {
 
     int first = 0;
@@ -14,17 +15,17 @@ bool binarySearch(const std::vector<int> &a_sorted_vector, int desired_search) {
 
         middle = (first + last) / 2;
         
-		if (sorted[middle] == desired_search) {
+	if (sorted[middle] == desired_search) {
 	
             return true;
 
-		}
+	}
 		
-		else if (sorted[middle] > desired_search){
+	else if (sorted[middle] > desired_search){
 
             last = middle - 1;
 
-		}
+	}
         
         else {
             
@@ -32,7 +33,7 @@ bool binarySearch(const std::vector<int> &a_sorted_vector, int desired_search) {
             
         }
 
-	}
+    }
 
     return false;
 }
